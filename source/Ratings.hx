@@ -105,17 +105,17 @@ class Ratings
 				switch (index)
 				{
 					case 0: // shit
-						return "shit";
+						return "TU É RUIM";
 					case 1: // bad
-						return "bad";
+						return "UMA CAGADA";
 					case 2: // good
-						return "good";
+						return "MUITO BOM";
 					case 3: // sick
-						return "sick";
+						return "OTIMO";
 				}
 			}
 		}
-		return "good";
+		return "MUITO BOM";
 	}
 
 	public static function CalculateRanking(score:Int, scoreDef:Int, nps:Int, maxNPS:Int, accuracy:Float):String

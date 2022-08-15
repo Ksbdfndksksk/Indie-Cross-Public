@@ -17,7 +17,7 @@ class PauseSubState extends MusicBeatSubstate
 {
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
-	var menuItems:Array<String> = ['Resume', 'Options', 'Restart Song', 'Exit to menu'];
+	var menuItems:Array<String> = ['Resumir', 'Opcoes', 'Reiniciar Musica', 'Vaza pro menu'];
 	var curSelected:Int = 0;
 
 	var pauseMusic:FlxSound;
@@ -275,13 +275,13 @@ class PauseSubState extends MusicBeatSubstate
 
 		switch (daSelected)
 		{
-			case "Resume":
+			case "Resumir":
 				if (exitStateTimeDelay <= 0.0)
 				{
 					closeState();
 					resumin();
 				}
-			case 'Options':
+			case 'Opcoes':
 				if (exitStateTimeDelay <= 0.0)
 				{
 					FlxTween.globalManager.active = true;
@@ -289,10 +289,10 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.instance.defaultBrightVal = 0;
 					setBrightness(0);
 
-					OptionsMenu.fromFreeplay = true;
-					FlxG.switchState(new OptionsMenu());
+					OpcoesMenu.fromFreeplay = true;
+					FlxG.switchState(new OpcoesMenu());
 				}
-			case "Restart Song":
+			case "Reiniciar Musica":
 				if (exitStateTimeDelay <= 0.0)
 				{
 					FlxTween.globalManager.active = true;
@@ -303,7 +303,7 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.instance.playerDie();
 					close();
 				}
-			case "Exit to menu":
+			case "Vaza pro menu":
 				if (exitStateTimeDelay <= 0.0)
 				{
 					if (PlayState.isStoryMode)

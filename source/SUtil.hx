@@ -3,10 +3,12 @@ package;
 #if android
 import android.Hardware;
 import android.Permissions;
+import android.os.Build.VERSION;
 import android.os.Environment;
 #end
 import flash.system.System;
 import flixel.FlxG;
+import flixel.util.FlxStringUtil;
 import haxe.CallStack.StackItem;
 import haxe.CallStack;
 import haxe.io.Path;
@@ -16,8 +18,6 @@ import openfl.utils.Assets as OpenFlAssets;
 import openfl.Lib;
 import sys.FileSystem;
 import sys.io.File;
-
-using StringTools;
 
 /**
  * ...
@@ -62,14 +62,22 @@ class SUtil
 		if (!Permissions.getGrantedPermissions().contains(PermissionsList.WRITE_EXTERNAL_STORAGE)
 			&& !Permissions.getGrantedPermissions().contains(PermissionsList.READ_EXTERNAL_STORAGE))
 		{
-			Permissions.requestPermissions([PermissionsList.WRITE_EXTERNAL_STORAGE, PermissionsList.READ_EXTERNAL_STORAGE]);
+			if (VERSION.SDK_INT > 23 || VERSION.SDK_INT == 23)
+			{
+				Permissions.requestPermissions([PermissionsList.WRITE_EXTERNAL_STORAGE, PermissionsList.READ_EXTERNAL_STORAGE]);
 
-			/**
-			 * Basically for now i can't force the app to stop while its requesting a android permission, so this makes the app to stop while its requesting the specific permission
-			 */
-			Application.current.window.alert('If you accepted the permissions you are all good!' + "\nIf you didn't then expect a crash"
-				+ 'Press Ok to see what happens',
-				'Permissions?');
+				/**
+				 * Basically for now i can't force the app to stop while its requesting a android permission, so this makes the app to stop while its requesting the specific permission
+				 */
+				Application.current.window.alert('Se você aceitou as permissões, tudo bem!' + "\nSe você não esperava um crash"
+					+ 'Pressione Ok para ver o que acontece',
+					'Permissões?');
+			}
+			else
+			{
+				Application.current.window.alert('Por favor, conceda as permissões de armazenamento do jogo nas configurações do aplicativo' + '\nPressione Ok io fechar o aplicativo', 'Permissões?');
+				System.exit(1);
+			}
 		}
 
 		if (Permissions.getGrantedPermissions().contains(PermissionsList.WRITE_EXTERNAL_STORAGE)
@@ -125,16 +133,10 @@ class SUtil
 			{
 				switch (stackItem)
 				{
-					case CFunction:
-						errMsg += '(a C function)\n';
-					case Module(m):
-						errMsg += '(module ' + m + ')\n';
 					case FilePos(s, file, line, column):
-						errMsg += '(' + file + ' line ' + line + ' column ' + column == null ? "<unknown>" : column + ')\n';
-					case Method(cname, meth):
-						errMsg += '(' + cname == null ? "<unknown>" : cname + '.' + meth + ')\n';
-					case LocalFunction(n):
-						errMsg += "(local function #" + n + ')\n';
+						errMsg += file + ' (line ' + line + ')\n';
+					default:
+						Sys.println(stackItem);
 				}
 			}
 
@@ -145,11 +147,11 @@ class SUtil
 
 			try
 			{
-				if (!FileSystem.exists(SUtil.getPath() + 'logs'))
-					FileSystem.createDirectory(SUtil.getPath() + 'logs');
+				if (!FileSystem.exists(SUtil.getPath() + 'crash'))
+					FileSystem.createDirectory(SUtil.getPath() + 'crash');
 
-				File.saveContent(SUtil.getPath() + 'logs/' + Application.current.meta.get('file') + '_'
-					+ Date.now().toString().replace(" ", "-").replace(":", "'") + '.log',
+				File.saveContent(SUtil.getPath() + 'crash/' + Application.current.meta.get('file') + '_'
+					+ FlxStringUtil.formatTime(Date.now().getTime(), true) + '.log',
 					errMsg + "\n");
 			}
 			#if android
@@ -169,11 +171,11 @@ class SUtil
 				FileSystem.createDirectory(SUtil.getPath() + 'saves');
 
 			File.saveContent(SUtil.getPath() + 'saves/' + fileName + fileExtension, fileData);
-			Hardware.toast("File Saved Successfully!", 2);
+			Hardware.toast("Arquivo salvo com sucesso!", 2);
 		}
 		#if android
 		catch (e:Dynamic)
-			Hardware.toast("Error!\nClouldn't save the file because:\n" + e, 2);
+			Hardware.toast("Error!\nNão foi possível salvar o arquivo porque:\n" + e, 2);
 		#end
 	}
 
@@ -186,7 +188,10 @@ class SUtil
 		}
 		#if android
 		catch (e:Dynamic)
-			Hardware.toast("Error!\nClouldn't copy the file because:\n" + e, 2);
+			Hardware.toast("Error!\nNão foi possível copiar o arquivo porque:\n" + e, 2);
 		#end
 	}
+
+	public static function getDisplayRefreshRate():Int
+		return Application.current.window.displayMode.refreshRate;
 }

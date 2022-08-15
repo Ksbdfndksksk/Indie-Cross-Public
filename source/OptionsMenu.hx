@@ -20,47 +20,47 @@ class OptionsMenu extends MusicBeatState
 	var curSelected:Int = 0;
 
 	var options:Array<OptionCategory> = [
-		new OptionCategory("Gameplay", [
+		new OptionCategory("Jogabilidade", [
 			new DFJKOption(),
 			#if android
-			new MechsInputVariants("Variants of inputs for mechanics. !!!THIS OPTION AFFECTS ONLY TO HITBOX INPUT!!!"),
+			new MechsInputVariants("Variantes de insumos para mecânica. !!!ESTA OPÇÃO AFETA APENAS A ENTRADA HITBOX!!!"),
 			#end
-			new DownscrollOption("Change the layout of the strumline."),
-			new GhostTapOption("Ghost Tapping is when you tap a direction and it doesn't give you a miss."),
-			new BotPlay("Showcase your charts and mods with autoplay."),
-			new ResetButtonOption("Toggle pressing R to gameover."),
-			new Hitsounds("Toggle hitsounds."),
-			new Judgement("Customize your Hit Timings (LEFT or RIGHT)"),
-			new AccuracyDOption("Change how accuracy is calculated. (Accurate = Simple, Complex = Milisecond Based)")
+			new DownscrollOption("Alterar o layout do strumline."),
+			new GhostTapOption("Ghost Tapping é quando você toca em uma direção e não dá erro."),
+			new BotPlay("Exiba seus gráficos e mods com reprodução automática."),
+			new ResetButtonOption("Alterne pressionando R para gameover."),
+			new Hitsounds("Alternar sons de acertos."),
+			new Judgement("Personalize seus tempos de acerto (ESQUERDA ou DIREITA)"),
+			new AccuracyDOption("Altere como a precisão é calculada. (Preciso = Simples, Complexo = Baseado em Milissegundos)")
 		]),
-		new OptionCategory("Appearance", [
-			new SongPositionOption("Show the songs current position (as a bar)"),
-			new HudAlpha("Change the transparency of your HUD"),
-			new LaneUnderlayOption("Toggle a lane underway (Left or right for transparency)"),
-			new CamZoomOption("Toggle the camera zoom in-game."),
-			new AccuracyOption("Display accuracy information."),
-			new NPSDisplayOption("Shows your current Notes Per Second."),
-			new ShowMS("Show the MS count for each note press")
+		new OptionCategory("Aparencia", [
+			new SongPositionOption("Mostra a posição atual das músicas (como uma barra)"),
+			new HudAlpha("Altere a transparência do seu HUD"),
+			new LaneUnderlayOption("Alternar uma faixa em andamento (esquerda ou direita para transparência)"),
+			new CamZoomOption("Alterne o zoom da câmera no jogo."),
+			new AccuracyOption("Exibir informações de precisão."),
+			new NPSDisplayOption("Mostra suas notas atuais por segundo."),
+			new ShowMS("Mostrar a contagem de MS para cada nota pressionada")
 		]),
-		new OptionCategory("Performance", [
-			new Photosensitive("Turn off visual effects that may harm your vision."),
-			new HighQuality("Enable low quality mode for a smoother playing experience."),
+		new OptionCategory("atuacao", [
+			new Photosensitive("Desligue os efeitos visuais que podem prejudicar sua visão."),
+			new HighQuality("Ative o modo de baixa qualidade para uma experiência de jogo mais suave."),
 		]),
-		new OptionCategory("Window", [
+		new OptionCategory("PC", [
 			#if !android
-			new Resolution("Change the game's resolution, press ENTER to apply"),
+			new Resolution("Altere a resolução do jogo, pressione ENTER para aplicar"),
 			#end
-			new Gamma("Change the gamma value of the app."),
-			new Brightness("Change the brightness value of the app."),
-			new FocusFreeze("Freeze the game when clicking off of the application."),
-			new FocusPause("Open the pause menu when clicking off of the application in a song (Only works with Focus Freeze)."),
-			new FPSCapOption("Cap your FPS"),
-			new FPSOption("Toggle the FPS Counter"),
-			new MemOption("Toggle the Memory Counter"),
-			new RainbowFPSOption("Make the FPS and Memory Counter Rainbow")
+			new Gamma("Alterar o valor gama do aplicativo."),
+			new Brightness("Altere o valor de brilho do aplicativo."),
+			new FocusFreeze("Congele o jogo ao clicar fora do aplicativo."),
+			new FocusPause("Abra o menu de pausa ao clicar fora do aplicativo em uma música (funciona apenas com Focus Freeze)."),
+			new FPSCapOption("Limite seu FPS"),
+			new FPSOption("Alternar o contador de FPS"),
+			new MemOption("Alternar o contador de memória"),
+			new RainbowFPSOption("Faça o FPS e o contador de memória Arco-íris")
 		]),
-		new OptionCategory("Accessibility", [
-			new ShowSubtitles("Show subtitles during cutscenes."),
+		new OptionCategory("Acessibilidade", [
+			new ShowSubtitles("Mostrar legendas durante as cutscenes."),
 			new Colorblind("")
 			// new LogInGJ("Log into gamejolt for achievements & perks"),
 			// new LogOutGJ("Log out of your gamejolt account")
@@ -111,9 +111,9 @@ class OptionsMenu extends MusicBeatState
 			// DONT PUT X IN THE FIRST PARAMETER OF new ALPHABET() !! ma dumbass didnt read this lmao
 		}
 
-		currentDescription = "none";
+		currentDescription = "Nenhum";
 
-		versionShit = new FlxText(5, FlxG.height + 40, 0, "Offset (Left, Right, Shift for slow): " + HelperFunctions.truncateFloat(FlxG.save.data.offset, 2),
+		versionShit = new FlxText(5, FlxG.height + 40, 0, "Offset (Esquerda, Direita, Shift para lento): " + HelperFunctions.truncateFloat(FlxG.save.data.offset, 2),
 			12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat(HelperFunctions.returnMenuFont(versionShit), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -302,7 +302,7 @@ class OptionsMenu extends MusicBeatState
 		versionShit.text = currentSelectedCat.getOptions()[curSelected].getValue();
 		if (currentDescription != '')
 		{
-			versionShit.text += " - Description - " + currentDescription;
+			versionShit.text += " - Descrição - " + currentDescription;
 		}
 	}
 
@@ -320,7 +320,7 @@ class OptionsMenu extends MusicBeatState
 		else if (controls.LEFT)
 			FlxG.save.data.offset -= 0.1;
 
-		versionShit.text = "Offset (Left, Right, Shift for slow): " + HelperFunctions.truncateFloat(FlxG.save.data.offset, 2) + " - Description - "
+		versionShit.text = "Offset (Esquerda, Direita, Shift para lento): " + HelperFunctions.truncateFloat(FlxG.save.data.offset, 2) + " - Descrição - "
 			+ currentDescription;
 	}
 
@@ -343,17 +343,17 @@ class OptionsMenu extends MusicBeatState
 		if (isCat)
 			currentDescription = currentSelectedCat.getOptions()[curSelected].getDescription();
 		else
-			currentDescription = "Please select a category";
+			currentDescription = "Por favor, selecione uma categoria";
 		if (isCat)
 		{
 			if (currentSelectedCat.getOptions()[curSelected].getAccept())
-				versionShit.text = currentSelectedCat.getOptions()[curSelected].getValue() + " - Description - " + currentDescription;
+				versionShit.text = currentSelectedCat.getOptions()[curSelected].getValue() + " - Descrição - " + currentDescription;
 			else
-				versionShit.text = "Offset (Left, Right, Shift for slow): " + HelperFunctions.truncateFloat(FlxG.save.data.offset, 2) + " - Description - "
+				versionShit.text = "Offset (Esquerda, Direita, Shift para lento): " + HelperFunctions.truncateFloat(FlxG.save.data.offset, 2) + " - Descrição - "
 					+ currentDescription;
 		}
 		else
-			versionShit.text = "Offset (Left, Right, Shift for slow): " + HelperFunctions.truncateFloat(FlxG.save.data.offset, 2) + " - Description - "
+			versionShit.text = "Offset (Esquerda, Direita, Shift para lento): " + HelperFunctions.truncateFloat(FlxG.save.data.offset, 2) + " - Descrição - "
 				+ currentDescription;
 
 		var bullShit:Int = 0;

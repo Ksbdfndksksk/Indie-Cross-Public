@@ -129,6 +129,7 @@ class Caching extends MusicBeatState
 		new FlxTimer().start(1, function(tmr:FlxTimer)
 		{
 			screen.setLoadingText("Tudo ok!");
+			screen.setLoadingText("Fds");
 			end();
 		});
 	}
