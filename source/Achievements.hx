@@ -31,28 +31,28 @@ class Achievements
 {
 	public static var achievements:Array<Achieve> = [
 		// bronze achievements
-		new Achieve("Captured", "Lose to Sans and Papyrus", true, 148410, "b1", FlxColor.fromRGB(219, 148, 77)),
+		new Achieve("Capturado", "Perde para Sans e Papyrus", true, 148410, "b1", FlxColor.fromRGB(219, 148, 77)),
 		// silver achievements
-		new Achieve("Unworthy", "Hit 50 blue bone notes", false, 148408, "s1", FlxColor.fromRGB(192, 192, 192)),
-		new Achieve("Unworthy II", "Hit 50 ink notes", false, 148409, "s2", FlxColor.fromRGB(192, 192, 192)),
-		new Achieve("Unworthy III", "Die on Despair 50 times", false, 148405, "s3", FlxColor.fromRGB(192, 192, 192)),
-		new Achieve("Pacifist", "Choose peace", false, 148406, "s4", FlxColor.fromRGB(192, 192, 192)),
-		new Achieve("Genocide", "Kill Sans", false, 148422, "s5", FlxColor.fromRGB(192, 192, 192)),
+		new Achieve("Indigno", "Acerte 50 notas de osso azul", false, 148408, "s1", FlxColor.fromRGB(192, 192, 192)),
+		new Achieve("Indigno II", "Acerte 50 notas de tinta", false, 148409, "s2", FlxColor.fromRGB(192, 192, 192)),
+		new Achieve("Indigno III", "Morrer em desespero 50 vezes", false, 148405, "s3", FlxColor.fromRGB(192, 192, 192)),
+		new Achieve("Pacifista", "Escolha a paz", true, 148406, "s4", FlxColor.fromRGB(192, 192, 192)),
+		new Achieve("Genocídio", "Matar Sans", false, 148422, "s5", FlxColor.fromRGB(192, 192, 192)),
 		// gold achievements
-		new Achieve("Gose?", "Play the secret Gose song", true, 148412, "g1", FlxColor.fromRGB(255, 204, 51)),
-		new Achieve("Take One For The Team", "Die protecting mugman", true, 157761, "g2", FlxColor.fromRGB(255, 204, 51)),
-		new Achieve("Saness", "Play the secret Saness song", true, 157762, "g3", FlxColor.fromRGB(255, 204, 51)),
-		new Achieve("Courage", "Beat Last Reel on hard without dodging once", true, 158227, "g4", FlxColor.fromRGB(255, 204, 51)),
-		new Achieve("What Is Blood?", "Play the secret Fuel Song", true, 0 /* there's no achievement yet, i don't wanna break anything tho*/, "g5",
+		new Achieve("Gose?", "Toque a música secreta de Gose", true, 148412, "g1", FlxColor.fromRGB(255, 204, 51)),
+		new Achieve("Leve um para a equipe", "Morra protegendo mugman", true, 157761, "g2", FlxColor.fromRGB(255, 204, 51)),
+		new Achieve("Saness", "Toque a música secreta de Sanes", true, 157762, "g3", FlxColor.fromRGB(255, 204, 51)),
+		new Achieve("Coragem", "Bata o Last Reel com força sem se esquivar uma vez", true, 158227, "g4", FlxColor.fromRGB(255, 204, 51)),
+		new Achieve("O que é sangue?", "Jogue o segredo Fuel Canção", true, 0 /* there's no achievement yet, i don't wanna break anything tho*/, "g5",
 			FlxColor.fromRGB(255, 204, 51)), // DO NOT USE THIS ONE YET! !!!!
 		// platinum achievements
-		new Achieve("The Legendary Chalice", "FC the entire Cuphead week on Hard", false, 148401, "p1", FlxColor.fromRGB(254, 224, 104)),
-		new Achieve("Determination", "FC the entire Sans week on Hard", false, 148402, "p2", FlxColor.fromRGB(254, 224, 104)),
-		new Achieve("Bring Home the Bacon", "FC the entire Ink Demon week on Hard", false, 148400, "p3", FlxColor.fromRGB(254, 224, 104)),
-		new Achieve("Ultimate Knockout", "Defeat Nightmare Cuphead", false, 148398, "p4", FlxColor.fromRGB(255, 0, 102)),
-		new Achieve("bad time", "Defeat Nightmare Sans", false, 148399, "p5", FlxColor.fromRGB(0, 251, 251)),
-		new Achieve("Inking Mistake", "Defeat Nightmare Bendy", false, 148397, "p6", FlxColor.fromRGB(255, 206, 0)),
-		new Achieve("The End", "Beat every week", false, 148396, "p7", FlxColor.fromRGB(214, 214, 214))
+		new Achieve("O Cálice Lendário", "FC a semana inteira de Cuphead no Hard", false, 148401, "p1", FlxColor.fromRGB(254, 224, 104)),
+		new Achieve("Determinação", "FC toda a semana Sans no Hard", false, 148402, "p2", FlxColor.fromRGB(254, 224, 104)),
+		new Achieve("Traga para casa o bacon", "FC toda a semana Ink Demon no Hard", false, 148400, "p3", FlxColor.fromRGB(254, 224, 104)),
+		new Achieve("Nocaute Supremo", "Derrote o Nightmare Cuphead", false, 148398, "p4", FlxColor.fromRGB(255, 0, 102)),
+		new Achieve("TEMPO RUIM", "Derrote Nightmare Sans", false, 148399, "p5", FlxColor.fromRGB(0, 251, 251)),
+		new Achieve("Erro de tinta", "Derrote Nightmare Bendy", false, 148397, "p6", FlxColor.fromRGB(255, 206, 0)),
+		new Achieve("O Fim", "Passar toda semana", false, 148396, "p7", FlxColor.fromRGB(214, 214, 214))
 	];
 
 	public static function unlockAchievement(name:String = "", ?hasSound:Bool = true):Void

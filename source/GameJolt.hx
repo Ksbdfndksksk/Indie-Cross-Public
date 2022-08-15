@@ -117,14 +117,14 @@ class GameJoltAPI
 
 	/**
 	 * 
-	 * This function checks the data that we got back from GameJolt,
-	 * if it says that the trophy is already unlocked,
-	 * check if the trophy is unlocked IN THE GAME.
+	 * Esta função verifica os dados que recebemos do GameJolt,
+	 * se disser que o troféu já está desbloqueado,
+	 * verifique se o troféu está desbloqueado NO JOGO.
 	 * 
-	 * If it isn't, then unlock it.
+	 * Se não estiver, desbloqueie-o.
 	 * 
-	 * NOTE: For this function to work, the Tenta's GameJolt API has to be modified.
-	 * You must make the 'returnMap' variable available. A example: https://imgur.com/a/wj0ARTa
+	 * NOTA: Para que esta função funcione, a API GameJolt do Tenta tem ser modificado.
+	 * Você deve disponibilizar a variável 'returnMap'. Um exemplo: https://imgur.com/a/wj0ARTa
 	 * 
 	 * @param	trophyID	The ID of the trophy on GameJolt.
 	 * 
@@ -234,7 +234,7 @@ class GameJoltLogin extends MusicBeatState
 	var curSelected:Int = -1;
 
 	public static var login:Bool = false;
-	static var trophyCheck:Bool = false;
+	static var trophyCheck:Bool = true;
 
 	override function create()
 	{
