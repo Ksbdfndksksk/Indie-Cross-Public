@@ -26,242 +26,242 @@ class CreditsMenu extends MusicBeatState
 	static final credits:Array<Array<String>> = [
 		[
 			'Brightfyre',
-			"indie cross season 2",
-			'Leader',
+			"indie cross temporada 2",
+			'Líder',
 			"0",
 			"https://linktr.ee/BrightFyre"
 		],
 		[
 			'moro',
-			"Nothing is permanent. Bad times will pass away. Just keep yourself together",
-			'Animator',
+			"Nada é permanente. Os maus momentos passarão. Apenas mantenha-se junto",
+			'Animador',
 			"2",
 			"https://twitter.com/moro_nighteye"
 		],
 		[
 			'JzBoy',
-			"I want to play FNF Indie Cross",
-			"Artist",
+			"Eu quero jogar FNF Indie Cross",
+			"Artista",
 			"0",
 			"https://twitter.com/JzBoyAnims"
 		],
 		[
 			'Iku Aldena',
-			"Jtm comme l7em, mais l7em pour chwa, et toi pour l7wa",
-			"Artist",
+			"Jtm como l7em, mas l7em para chwa e você para l7wa",
+			"Artista",
 			"1",
 			"https://twitter.com/Iku_Aldena"
 		],
 		[
 			'Crae',
 			"hahahahahahahahahahahaahahahahahahhahahahahahahahahahaha lol",
-			"Artist",
+			"Artista",
 			"2",
 			"https://www.youtube.com/channel/UCw56btKqHAJUYPYhjrDjuAw"
 		],
 		[
 			'Diavololi',
-			"Scourge of Mongolia",
-			"Artist",
+			"Flagelo da Mongólia",
+			"Artista",
 			"0",
 			"https://twitter.com/d1avololi"
 		],
 		[
 			'Sugarratio',
-			"I like drawing and animating stickfigures",
-			'Artist',
+			"Eu gosto de desenhar e animar bonecos",
+			'Artista',
 			"1",
 			"https://twitter.com/SugarRatio"
 		],
 		[
 			'Cally3D',
-			"I made a singular 3D model why am I here!?",
-			"Artist",
+			"Fiz um modelo 3D singular por que estou aqui!?",
+			"Artista",
 			"1",
 			"https://twitter.com/Cally3D"
 		],
 		[
 			'River',
-			"Wait, I worked on this?",
-			"Artist",
+			"Espere, eu trabalhei nisso?",
+			"Artista",
 			"0",
 			"https://twitter.com/RiverOaken"
 		],
 		[
 			'nonsense',
-			"did you just shot me?",
-			"Artist",
+			"você acabou de atirar em mim?",
+			"Artista",
 			"0",
 			"https://www.youtube.com/c/NonsenseHumorLOL"
 		],
 		[
 			'Sector',
-			"I don't think Indie Cross can beat Goku :/",
-			"Developer",
+			"Eu não acho que o Indie Cross pode vencer o Goku :/",
+			"Desenvolvedor",
 			"1",
 			"https://twitter.com/Sector0003"
 		],
-		['Shadowfi', "mozo", 'Developer', "0", "https://twitter.com/Shadowfi1385"],
+		['Shadowfi', "mozo", 'Desenvolvedor', "0", "https://twitter.com/Shadowfi1385"],
 		[
 			'Gedehari',
-			"Good at programming, bad at everything else.",
-			"Developer",
+			"Bom em programação, ruim em todo o resto.",
+			"Desenvolvedor",
 			"1",
 			"https://twitter.com/gedehari"
 		],
 		[
 			'Perez',
-			"el pepe",
-			"Developer",
+			"o Pepe",
+			"Desenvolvedor",
 			"0",
 			"https://www.youtube.com/c/sebaelperezoso/featured"
 		],
 		[
 			'Proxy',
-			"made mp4 support, follow me on twitter!111",
-			"Developer",
+			"fez suporte mp4, siga-me no twitter!111",
+			"Desenvolvedor",
 			"1",
 			"https://twitter.com/polybiusproxy"
 		],
-		['Smokey', "kenny's a bitch", 'Developer', "0", "https://twitter.com/Smokey_5_"],
+		['Smokey', "Kenny é uma vadia", 'Desenvolvedor', "0", "https://twitter.com/Smokey_5_"],
 		[
 			'Hexar',
-			"brightfyre is a 5head",
-			"Developer",
+			"BrightFyre é um 5head",
+			"Desenvolvedor",
 			"0",
 			"https://twitter.com/hexar__"
 		],
-		['volv', "how did i get here?", "Developer", "0", "https://twitter.com/_Volved"],
+		['volv', "Como eu cheguei aqui?", "Desenvolvedor", "0", "https://twitter.com/_Volved"],
 		[
 			'KadeDev',
-			"pasc *kissing noises*",
-			"Developer",
+			"pasc *barulhos de beijos*",
+			"Desenvolvedor",
 			"0",
-			"https://twitter.com/KadeDeveloper"
+			"https://twitter.com/KadeDesenvolvedor"
 		],
-		['Taeyai', "I can do anything!", "Developer", "0", "https://twitter.com/Taeyai_"],
-		['isophoro', "play vs isophoro", 'Developer', "3", "https://twitter.com/isophoro"],
+		['Taeyai', "Eu não posso fazer nada!", "Desenvolvedor", "0", "https://twitter.com/Taeyai_"],
+		['isophoro', "jogar vs isophoro", 'Desenvolvedor', "3", "https://twitter.com/isophoro"],
 		[
 			'Saster',
-			"quality content, as usual",
-			"Musician",
+			"conteúdo de qualidade, como de costume",
+			"Músico",
 			"0",
 			"https://www.youtube.com/channel/UCC4CkqOAwulRil3BEK9L3Mg"
 		],
 		[
 			'Saru',
-			"Momazos Saru",
-			'Musician',
+			"macaco masoquista",
+			'Músico',
 			"0",
 			"https://www.youtube.com/channel/UCKLD_M9TFSzgMTECZ6lcyrw"
 		],
 		[
 			'Tenzu',
-			"pico pichula weon conchetumare culiao uwu",
-			"Musician",
+			"pic OPI exceto admiração no carro TU Mar ECU tem U Wu",
+			"Músico",
 			"1",
 			"https://www.youtube.com/channel/UC7KmfbdAPt2bYCcSNJnCm-g"
 		],
 		[
 			'TheInnuend0',
 			"H",
-			"Musician",
+			"Músico",
 			"0",
 			"https://www.youtube.com/channel/UCPM7_b1BzPxOerSEJmKxZCw"
 		],
 		[
 			'Orenji',
-			"top 10 cheese",
-			"Musician",
+			"10 melhores queijos",
+			"Músico",
 			"0",
 			"https://www.youtube.com/channel/UCUrh__AJo0Y_pCwJYjB7shw"
 		],
 		[
 			'Yingyang',
-			"Sans Undertale is my father",
-			'Musician',
+			"Sans Undertale é meu pai",
+			'Músico',
 			"0",
 			"https://www.youtube.com/channel/UCnIjU-JNj3szZ1Q8tLCKjuw"
 		],
 		[
 			'Rozebud',
-			"Download Bunker Bumrush",
-			'Musician',
+			"Baixar Bunker Bumrush",
+			'Músico',
 			"0",
 			"https://www.youtube.com/c/Rozebud/featured"
 		],
 		[
 			'DAGames',
-			"Wheres my wife? Can someone find my wife?",
-			"Musician",
+			"Cadê minha esposa? Alguém pode encontrar minha esposa?",
+			"Músico",
 			"1",
 			"https://www.youtube.com/channel/UCK7OXr0m5mnM1z9p7n_Bwfw"
 		],
 		[
 			'CrystalSlime', // the cool one of the team (shhh dont tell the others) //WTF Crystal? - TaeYai
-			"you can wake up being yourself but you cant wake up being a different self than you originally were. so shoot for the moon between all of the stars because every day is a chance to start the day with a new day. thats the first step in the process of opening up your mind",
-			"Musician",
+			"você pode acordar sendo você mesmo, mas não pode acordar sendo um eu diferente do que era originalmente. então atire para a lua entre todas as estrelas porque todo dia é uma chance de começar o dia com um novo dia. esse é o primeiro passo no processo de abrir sua mente",
+			"Músico",
 			"3",
 			"https://www.youtube.com/channel/UCT_wYKD4twxoYOZt2ggXHlw"
 		],
 		[
 			'BLVKAROT',
-			"50% Sea, 50% Weed, and 100% reason to remember the name.",
-			"Musician",
+			"50% Sea, 50% Weed e 100% razão para lembrar o nome.",
+			"Músico",
 			"1",
 			"https://www.youtube.com/channel/UCPRT4ptgtoz-jPD_hqJ3mtg"
 		],
 		[
 			'Joan Atlas',
-			"ete sech",
-			"Musician",
+			"coma você mesmo",
+			"Músico",
 			"0",
 			"https://www.youtube.com/channel/UCraIAPdHnnkJxfapv8oRv0w"
 		],
 		[
 			'Mike Geno',
-			"I make music for fun",
-			"Musician",
+			"Eu faço música por diversão",
+			"Músico",
 			"0",
 			"https://www.youtube.com/channel/UCyDQKOgEjuIiuPXctcuQKlg"
 		],
 		[
 			'CDmusic',
-			"hi I’m bri’ish and I make music for a bunch of stuff :p also 375bpm",
-			"Musician",
+			"oi eu sou bri'ish e faço música para um monte de coisas :p também 375bpm",
+			"Músico",
 			"2",
 			"https://www.youtube.com/channel/UCOItBqiAAbWEdm21Mcv3g_Q"
 		],
 		[
 			'BBpanzu',
-			"Know your worth.",
-			"Musician",
+			"Saiba seu valor.",
+			"Músico",
 			"0",
 			"https://www.youtube.com/c/bbpanzuRulesSoSubscribeplz123/featured"
 		],
 		[
 			'Brandxn',
-			"You can call me the worst producer",
-			'Musician',
+			"Você pode me chamar de pior produtor",
+			'Músico',
 			"1",
 			"https://www.youtube.com/c/Brandxns/featured"
 		],
-		['Kal', "i love snas", "Charter", "0", "https://twitter.com/Kal_050"],
+		['Kal', "eu amo snas", "Criador de Charts", "0", "https://twitter.com/Kal_050"],
 		[
 			'DJ',
-			"The amount of dandruff in your hair bro, if i were to smack your shit. It would be a smoke screen",
-			"Charter",
+			"A quantidade de caspa em seu cabelo mano, se eu fosse bater na sua cabeça. Seria uma cortina de fumaça",
+			"Criador de Charts",
 			"3",
 			"https://twitter.com/AlchoholicDj"
 		],
 		[
 			'Cerbera',
 			"Nightmare Nightmare Nightmare Nightmare Nightmare Nightmare Nightmare",
-			"Charter",
+			"Criador de Charts",
 			"2",
 			"https://twitter.com/Cerbera_fnf"
 		],
-		['Cval', "what the? im jads?", "Charter", "0", "https://twitter.com/cval_brown"]
+		['Cval', "o que? sou jad?", "Criador de Charts", "0", "https://twitter.com/cval_brown"]
 	];
 
 	var specialThanksMain:String = "James Dijit (VA of Sammy)\n
@@ -305,7 +305,7 @@ class CreditsMenu extends MusicBeatState
 	var credQuoteText:FlxText;
 	var credRoleText:FlxText;
 
-	var credTypes:Array<String> = ["Leader", "Coder", "Music", "Charter", "Artist"];
+	var credTypes:Array<String> = ["Líder", "Codificador", "Music", "Criador de Charts", "Artista"];
 
 	var quoteBack:FlxSprite;
 
@@ -323,7 +323,7 @@ class CreditsMenu extends MusicBeatState
 
 		persistentUpdate = true;
 
-		bg = new FlxSprite().loadGraphic(Paths.image('credits/bg/Leader_BG', 'preload'));
+		bg = new FlxSprite().loadGraphic(Paths.image('credits/bg/Líder_BG', 'preload'));
 		bg.updateHitbox();
 		bg.screenCenter();
 		bg.antialiasing = FlxG.save.data.highquality;
@@ -382,7 +382,7 @@ class CreditsMenu extends MusicBeatState
 		credLargeName.alignment = CENTER;
 		add(credLargeName);
 
-		credRoleText = new FlxText(770, 478, 450, 'LEADER');
+		credRoleText = new FlxText(770, 478, 450, 'Líder');
 		credRoleText.setFormat(Paths.font("Bronx.otf"), 32, 0xFFB254FF);
 		credRoleText.alignment = CENTER;
 		add(credRoleText);
@@ -395,7 +395,7 @@ class CreditsMenu extends MusicBeatState
 		quoteBack.visible = false;
 		add(quoteBack);
 
-		specialThanksText = new FlxText(quoteBack.x, quoteBack.y + 120, 500, 'Press TAB for Special Thanks');
+		specialThanksText = new FlxText(quoteBack.x, quoteBack.y + 120, 500, 'Pressione TAB para agradecimentos especiais');
 		specialThanksText.setFormat(Paths.font("Bronx.otf"), 16, FlxColor.WHITE);
 		specialThanksText.alignment = CENTER;
 		add(specialThanksText);
@@ -607,30 +607,30 @@ class CreditsMenu extends MusicBeatState
 
 		switch (credits[sel][2])
 		{
-			case 'Leader':
+			case 'Líder':
 				bg.loadGraphic(bgAssets[0], false, bg.frameWidth, bg.frameHeight, true);
 				credRoleText.color = FlxColor.fromRGB(178, 84, 255);
-				credRoleText.text = 'Leader';
-			case 'Artist':
+				credRoleText.text = 'Líder';
+			case 'Artista':
 				bg.loadGraphic(bgAssets[4], false, bg.frameWidth, bg.frameHeight, true);
 				credRoleText.color = FlxColor.fromRGB(255, 218, 82);
-				credRoleText.text = 'Artist';
-			case 'Animator':
+				credRoleText.text = 'Artista';
+			case 'Animador':
 				bg.loadGraphic(bgAssets[4], false, bg.frameWidth, bg.frameHeight, true);
 				credRoleText.color = FlxColor.fromRGB(255, 218, 82);
-				credRoleText.text = 'Animator';
-			case 'Charter':
+				credRoleText.text = 'Animador';
+			case 'Criador de Charts':
 				bg.loadGraphic(bgAssets[3], false, bg.frameWidth, bg.frameHeight, true);
 				credRoleText.color = FlxColor.fromRGB(82, 255, 151);
-				credRoleText.text = 'Charter';
-			case 'Developer':
+				credRoleText.text = 'Criador de Charts';
+			case 'Desenvolvedor':
 				bg.loadGraphic(bgAssets[1], false, bg.frameWidth, bg.frameHeight, true);
 				credRoleText.color = FlxColor.fromRGB(255, 92, 82);
-				credRoleText.text = 'Developer';
-			case 'Musician':
+				credRoleText.text = 'Desenvolvedor';
+			case 'Músico':
 				bg.loadGraphic(bgAssets[2], false, bg.frameWidth, bg.frameHeight, true);
 				credRoleText.color = FlxColor.fromRGB(82, 119, 255);
-				credRoleText.text = 'Musician';
+				credRoleText.text = 'Músico';
 		}
 
 		switch (credits[sel][0])
