@@ -265,8 +265,8 @@ class CreditsMenu extends MusicBeatState
 			"Viver não é apenas ficar em frente a uma tela de um pc ou celular",
 			"Tradutor de Mods",
 			"2"
-		[
-		  'Cval', "o que? sou jad?", "Criador de Charts", "0", "https://twitter.com/cval_brown"]
+		],
+		['Cval', "o que? sou jad?", "Criador de Charts", "0", "https://twitter.com/cval_brown"]
 	];
 
 	var specialThanksMain:String = "James Dijit (VA of Sammy)\n
