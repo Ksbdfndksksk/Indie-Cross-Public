@@ -289,8 +289,8 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.instance.defaultBrightVal = 0;
 					setBrightness(0);
 
-					Options .fromFreeplay = true;
-					FlxG.switchState(new Options ());
+					OptionsMenu.fromFreeplay = true;
+					FlxG.switchState(new OptionsMenu());
 				}
 			case "Reiniciar Musica":
 				if (exitStateTimeDelay <= 0.0)
