@@ -105,17 +105,17 @@ class Ratings
 				switch (index)
 				{
 					case 0: // shit
-						return "TU É RUIM";
+						return "shit";
 					case 1: // bad
-						return "UMA CAGADA";
+						return "bad";
 					case 2: // good
-						return "MUITO BOM";
+						return "good";
 					case 3: // sick
-						return "OTIMO";
+						return "sick";
 				}
 			}
 		}
-		return "MUITO BOM";
+		return "good";
 	}
 
 	public static function CalculateRanking(score:Int, scoreDef:Int, nps:Int, maxNPS:Int, accuracy:Float):String
@@ -154,7 +154,7 @@ class Ratings
 				+ ((!PlayStateChangeables.botPlay
 					|| (PlayStateChangeables.botPlay && MainMenuState.showcase)) ? " | " : "") : "") + // 	NPS
 				(!PlayStateChangeables.botPlay
-					|| (PlayStateChangeables.botPlay && MainMenuState.showcase) ? "Score: " + (Conductor.safeFrames != 10 ? score + " (" + scoreDef + ")" : ""
+					|| (PlayStateChangeables.botPlay && MainMenuState.showcase) ? "Pontuação: " + (Conductor.safeFrames != 10 ? score + " (" + scoreDef + ")" : ""
 						+ score) + // Score
 						(FlxG.save.data.accuracyDisplay ? // Accuracy Toggle
 							" | Misses: "
