@@ -265,8 +265,7 @@ class CreditsMenu extends MusicBeatState
 		  'Derk Studio',
 			"Viver não é apenas ficar em frente a uma tela de um pc ou celular",
 			"Tradutor de Mods",
-			"2",
-			"https://twitter.com/Cerbera_fnf"
+			"2"
 		],
 		['Cval', "o que? sou jad?", "Criador de Charts", "0", "https://twitter.com/cval_brown"]
 	];
