@@ -154,13 +154,13 @@ class Ratings
 				+ ((!PlayStateChangeables.botPlay
 					|| (PlayStateChangeables.botPlay && MainMenuState.showcase)) ? " | " : "") : "") + // 	NPS
 				(!PlayStateChangeables.botPlay
-					|| (PlayStateChangeables.botPlay && MainMenuState.showcase) ? "Pontuação: " + (Conductor.safeFrames != 10 ? score + " (" + scoreDef + ")" : ""
+					|| (PlayStateChangeables.botPlay && MainMenuState.showcase) ? "Pontuacao: " + (Conductor.safeFrames != 10 ? score + " (" + scoreDef + ")" : ""
 						+ score) + // Score
 						(FlxG.save.data.accuracyDisplay ? // Accuracy Toggle
-							" | Misses: "
+							" | Erros: "
 							+ PlayState.instance.misses
 							+ // 	Misses/Combo Breaks
-							" | Accuracy: "
+							" | Precisao: "
 							+ ((PlayStateChangeables.botPlay && !MainMenuState.showcase) ? "N/A" : HelperFunctions.truncateFloat(accuracy, 2) + " %")
 							+ // 	Accuracy
 							" | "

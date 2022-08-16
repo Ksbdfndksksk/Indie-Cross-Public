@@ -261,6 +261,13 @@ class CreditsMenu extends MusicBeatState
 			"2",
 			"https://twitter.com/Cerbera_fnf"
 		],
+		[			
+		  'Derk Studio',
+			"Viver não é apenas ficar em frente a uma tela de um pc ou celular",
+			"Tradutor de Mods",
+			"2",
+			"https://twitter.com/Cerbera_fnf"
+		],
 		['Cval', "o que? sou jad?", "Criador de Charts", "0", "https://twitter.com/cval_brown"]
 	];
 
@@ -631,6 +638,10 @@ class CreditsMenu extends MusicBeatState
 				bg.loadGraphic(bgAssets[2], false, bg.frameWidth, bg.frameHeight, true);
 				credRoleText.color = FlxColor.fromRGB(82, 119, 255);
 				credRoleText.text = 'Músico';
+			case 'Tradutor de Mods':
+				bg.loadGraphic(bgAssets[2], false, bg.frameWidth, bg.frameHeight, true);
+				credRoleText.color = FlxColor.fromRGB(82, 119, 255);
+				credRoleText.text = 'Tradutor de Mods';
 		}
 
 		switch (credits[sel][0])
