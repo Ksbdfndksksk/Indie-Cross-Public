@@ -67,9 +67,6 @@ import sys.thread.Thread;
 import Discord.DiscordClient;
 import sys.FileSystem;
 #end
-#if android
-import android.flixel.FlxHitbox.Modes;
-#end
 
 class PlayState extends MusicBeatState
 {
@@ -1459,9 +1456,9 @@ class PlayState extends MusicBeatState
 		if (hasInstruction)
 		{
 			#if android
-			mechPressEnter = new FlxText(799, 672, 0, 'Touch to Continue', 32);
+			mechPressEnter = new FlxText(799, 672, 0, 'Toque para continuar', 32);
 			#else
-			mechPressEnter = new FlxText(793, 672, 0, 'Press Enter to Continue', 32);
+			mechPressEnter = new FlxText(793, 672, 0, 'Pressione Enter para continuar', 32);
 			#end
 			mechPressEnter.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			mechPressEnter.cameras = [camINSTRUCTION];
@@ -2953,21 +2950,17 @@ class PlayState extends MusicBeatState
 		switch (PlayState.SONG.song.toLowerCase())
 		{
 			case 'whoopee' | 'satanic-funkin' | 'ritual' | 'bad-time':
-				addAndroidControls(SINGLEDODGE);
+				addAndroidControls(4);
 			case 'last-reel':
-				addAndroidControls(TRIPLE);
+				addAndroidControls(3);
 			case 'knockout' | 'devils-gambit' | 'despair' | 'sansational' | 'burning-in-hell':
-				addAndroidControls(DOUBLE);
+				addAndroidControls(2);
 			case 'technicolor-tussle':
-				addAndroidControls(SINGLEATTACK);
+				addAndroidControls(1);
 			default:
-				addAndroidControls(DEFAULT);
+				addAndroidControls(0);
 		}
 		#end
-
-                preload('AllnoteSplashes', 'notes');
-                preload('Parry_assets', 'notes');
-                preload('sinSplashes', 'notes');
 
 		startingSong = true;
 
@@ -12680,13 +12673,5 @@ class PlayState extends MusicBeatState
 			else
 				trace('is null');
 		}
-	}
-
-        public function preload(graphic:String, ?lib:String) //preload assets
-	{
-		var newthing:FlxSprite = new FlxSprite(0,0).loadGraphic(Paths.image(graphic, lib));
-		newthing.visible = false;
-		add(newthing);
-		remove(newthing);
 	}
 }
