@@ -1458,7 +1458,7 @@ class PlayState extends MusicBeatState
 			#if android
 			mechPressEnter = new FlxText(799, 672, 0, 'Toque para continuar', 32);
 			#else
-			mechPressEnter = new FlxText(793, 672, 0, 'Pressione Enter para continuar', 32);
+			mechPressEnter = new FlxText(793, 672, 0, 'Press Enter to Continue', 32);
 			#end
 			mechPressEnter.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			mechPressEnter.cameras = [camINSTRUCTION];
