@@ -236,7 +236,7 @@ class CreditsMenu extends MusicBeatState
 			'BBpanzu',
 			"Saiba seu valor.",
 			"Músico",
-			"0",
+			"2",
 			"https://www.youtube.com/c/bbpanzuRulesSoSubscribeplz123/featured"
 		],
 		[
@@ -266,7 +266,7 @@ class CreditsMenu extends MusicBeatState
 			"Tradutor de Mods",
 			"2"
 		],
-		['Cval', "o que? sou jad?", "Criador de Charts", "0", "https://twitter.com/cval_brown"]
+		['Cval', "o que? sou jad?", "Criador de Charts", "2", "https://twitter.com/cval_brown"]
 	];
 
 	var specialThanksMain:String = "James Dijit (VA of Sammy)\n
